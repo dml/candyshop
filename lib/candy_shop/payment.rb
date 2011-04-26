@@ -5,7 +5,7 @@ module CandyShop
     def self.apply_plan(object, plan)
 
       begin
-        algorithm = CandyShop::Plans.const_get(plan)
+        algorithm = CandyShop::Payments::Plans.const_get(plan)
       rescue NameError => e
         raise PaymentError, "Can't find payment method"
       end

@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-class CandyShop::Plans::Test; end
+class CandyShop::Payments::Plans::Test; end
 
 describe CandyShop::Payment do
 
   it { respond_to :apply_plan }
 
-  let(:algorithm) { CandyShop::Plans::Test }
+  let(:algorithm) { CandyShop::Payments::Plans::Test }
   let(:customer) { Factory(:customer) }
   let(:plan) { 'free' }
 

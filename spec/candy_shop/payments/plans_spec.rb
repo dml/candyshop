@@ -19,25 +19,25 @@ end
 
 
 
-describe CandyShop::Plans::Free do
+describe CandyShop::Payments::Plans::Free do
   let(:fee) { 0.00 }
   let(:strategies) { %w{ registration base_knowledge } }
   it_behaves_like "a payment plan"
 end
 
-describe CandyShop::Plans::D5 do
+describe CandyShop::Payments::Plans::D5 do
   let(:fee) { 4.99 }
   let(:strategies) { %w{ registration advanced_knowledge base_knowledge snacks } }
   it_behaves_like "a payment plan"
 end
 
-describe CandyShop::Plans::D10 do
+describe CandyShop::Payments::Plans::D10 do
   let(:fee) { 9.99 }
   let(:strategies) { %w{ registration advanced_knowledge base_knowledge snacks talks } }
   it_behaves_like "a payment plan"
 end
 
-describe CandyShop::Plans::D20 do
+describe CandyShop::Payments::Plans::D20 do
   let(:fee) { 19.99 }
   let(:strategies) { %w{ registration advanced_knowledge base_knowledge snacks talks workshop } }
   it_behaves_like "a payment plan"
