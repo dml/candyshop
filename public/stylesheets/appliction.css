@@ -1,0 +1,36 @@
+
+body {
+  background: #4A6870;
+}
+
+div.content {
+  margin: auto;
+  width: 800px;
+  padding: 20px;
+  background: #fff;
+}
+
+.tariffs {
+  margin: auto;
+}
+
+.tariffs th {
+  padding: 5px;
+  background: #6A8D59;
+}
+
+.tariffs td {
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.tariffs td.label {
+  width: 200px;
+  text-align: left;
+}
+
+.odd { background: #C6AF71; }
+.even { background: #A8A966; }
+.label { background: #E2A97B; }
+

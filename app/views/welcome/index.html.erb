@@ -1,0 +1,87 @@
+<h1>Welcome#index</h1>
+<p>Choose a plan.</p>
+
+
+<div class="block">
+
+  <table class="tariffs">
+    <tr>
+      <th>&nbsp;</th>
+      <th>free</th>
+      <th>$4.99</th>
+      <th>$9.99</th>
+      <th>$19.99</th>
+    </tr>
+
+    <tr>
+      <td class="label">Registration</td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+    </tr>
+
+    <tr>
+      <td class="label">Free coffe, tea, snacks</td>
+      <td class="odd"></td>
+      <td class="even">+</td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+    </tr>
+
+    <tr>
+      <td class="label">Base knowledge</td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+    </tr>
+
+    <tr>
+      <td class="label">Advanced knowledge</td>
+      <td class="odd"></td>
+      <td class="even">+</td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+    </tr>
+
+    <tr>
+      <td class="label">Coffe talks</td>
+      <td class="odd"></td>
+      <td class="even"></td>
+      <td class="odd">+</td>
+      <td class="even">+</td>
+    </tr>
+
+    <tr>
+      <td class="label">Code workshop</td>
+      <td class="odd"></td>
+      <td class="even"></td>
+      <td class="odd"></td>
+      <td class="even">+</td>
+    </tr>
+
+    <tr>
+      <td class="label">&nbsp;</td>
+      <td class="odd">
+        <%= button_to "Free", { :controller => :participations, :action => :create, :plan => :free } %>
+      </td>
+      <td class="even">
+        <%= button_to "Buy", { :controller => :participations, :action => :create, :plan => :D5 } %>
+      </td>
+      <td class="odd">
+        <%= button_to "Buy", { :controller => :participations, :action => :create, :plan => :D10 } %>
+      </td>
+      <td class="even">
+        <%= button_to "Buy", { :controller => :participations, :action => :create, :plan => :D20 } %>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+
+<p>
+  
+</p>
