@@ -11,8 +11,8 @@ module CandyShop
       end
 
       customer = case object
-        # when Customer
-        #   object
+        when Customer
+          object
         when Integer
           Customer.find(object)
         else
