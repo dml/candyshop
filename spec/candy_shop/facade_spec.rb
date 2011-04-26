@@ -1,10 +1,6 @@
 require 'spec_helper'
 
-class CandyShop::Facades::Test
-  def create(*args)
-    
-  end
-end
+module CandyShop::Facades::Test; end
 
 
 describe CandyShop::Facade do
