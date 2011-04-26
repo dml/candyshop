@@ -1,7 +1,9 @@
 module CandyShop
-  module Strategies
-    class SnacksStrategy
+  module Payments
+    module Strategies
+      class SnacksStrategy
       
+      end
     end
   end
 end

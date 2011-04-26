@@ -1,7 +1,9 @@
 module CandyShop
-  module Strategies
-    class RegistrationStrategy
+  module Payments
+    module Strategies
+      class RegistrationStrategy
       
+      end
     end
   end
 end

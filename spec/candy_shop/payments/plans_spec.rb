@@ -2,10 +2,10 @@ require 'spec_helper'
 
 RSpec::Matchers.define :have_strategies do |sample|
   match do |actual|
-    similar?(sample.map{|a| a.to_sym}, actual)
+    similar?(sample.map{ |a| CandyShop::Payments::Strategies.const_get("#{a}_strategy".classify) }, actual)
   end
   def similar?(a, b)
-    a.sort == b.sort
+    a.map{|c| c.name}.sort == b.map{|c| c.name}.sort
   end
 end
 
