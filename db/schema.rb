@@ -10,11 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110426093821) do
+ActiveRecord::Schema.define(:version => 20110426101621) do
 
   create_table "customers", :force => true do |t|
     t.string   "name"
     t.decimal  "deposit",    :precision => 10, :scale => 2, :default => 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "participations", :force => true do |t|
+    t.integer  "customer_id"
+    t.decimal  "fee",         :precision => 10, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
