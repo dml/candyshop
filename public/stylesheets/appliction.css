@@ -34,3 +34,14 @@ div.content {
 .even { background: #A8A966; }
 .label { background: #E2A97B; }
 
+.flash_alert, .flash_notice {
+  padding: 10px;
+}
+
+.flash_alert {
+  background: #FF838B;
+}
+
+.flash_notice {
+  background: #A8A966;
+}

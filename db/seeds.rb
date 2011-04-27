@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+Customer.create(:name => 'Joe Satriani', :deposit => 19.98)
+Customer.create(:name => 'Steve Vai', :deposit => 21.99)

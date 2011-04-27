@@ -1,9 +1,3 @@
-module CandyShop
-  module Payments
-    module Strategies
-      class SnacksStrategy
-      
-      end
-    end
-  end
+class CandyShop::Payments::Strategies::SnacksStrategy
+
 end

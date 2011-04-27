@@ -1,9 +1,3 @@
-module CandyShop
-  module Payments
-    module Strategies
-      class AdvancedKnowledgeStrategy
+class CandyShop::Payments::Strategies::AdvancedKnowledgeStrategy
 
-      end
-    end
-  end
 end

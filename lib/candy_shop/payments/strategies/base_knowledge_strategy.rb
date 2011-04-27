@@ -1,9 +1,3 @@
-module CandyShop
-  module Payments
-    module Strategies
-      class BaseKnowledgeStrategy
-      
-      end
-    end
-  end
+class CandyShop::Payments::Strategies::BaseKnowledgeStrategy
+
 end

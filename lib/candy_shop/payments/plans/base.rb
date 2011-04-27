@@ -24,17 +24,25 @@ module CandyShop
           def fee
             options.try(:[], :fee)
           end
-        end
 
+          # Chain of Responsibilities
+          def apply(customer)
+            # TODO create responcibility
+            # TODO create Facility model - facilities, in fact, is a operation logging
+            # TODO list of strategies could be used as transaction, it could be reversed
 
+            options = { :fee => fee }
 
-        # Chain of Responsibilities
-        def apply(customer)
-          self.class.strategies.each do |strategy|
-            
+            # facilities = []
+            # strategies.each do |strategy|
+            #   # facilities << strategy.apply(customer)
+            # end
+
+            Payments::Strategies::RefundStrategy.apply(customer, options)
+
+            customer.participations.create(options)
           end
         end
-
       end
     end
   end
